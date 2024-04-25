@@ -1,0 +1,83 @@
+/* Global Styles */
+body {
+  font-family: "Open Sans", sans-serif;
+  background: #f2f2f2;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.btn,
+.modal-btn {
+  text-transform: uppercase;
+  background: #49a6e9;
+  color: #fff;
+  padding: 14px 28px; /* Adjusted padding for larger buttons */
+  font-size: 16px; /* Increased font size */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover,
+.modal-btn:hover {
+  background-color: #1c6dc6;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.3s ease;
+}
+
+.open-modal {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal-container {
+  background: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #ff3030;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Center text inside modal */
+.modal-container h3 {
+  margin: 0;
+}
+
+/* Center open modal text */
+.banner h1 {
+  margin: 0;
+}
